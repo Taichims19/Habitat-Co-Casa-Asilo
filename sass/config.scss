@@ -1,0 +1,92 @@
+//Import de funciones y mas
+@use "sass:math";
+
+//aqui se guardan las variables
+
+//Importar tipografia
+
+
+//importar iconos
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+//fuentes
+
+
+//guter
+$gutter: 1em;
+//Convertir px a em
+@function em($el, $parent: 16px) {
+  $em: math.div($el, $parent) * 1em;
+  @return $em;
+}
+@function rem($el, $parent: 16px) {
+  $rem: math.div($el, $parent) * 1rem;
+  @return $rem;
+}
+
+$font-size: em(14px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+//z-index variables
+$z-index: (
+    tooltip: 100,
+    modal: 500,
+    overlay: 700,
+    offcanvas: 1000,
+  );
+
+@function z-index($val) {
+  @return map-get($z-index, $val);
+}
+//colores del proyecto
+
+@function color($name) {
+  @each $key, $color in $colors {
+    @if ($key == $name) {
+      @return $color;
+    }
+  }
+  @warn "Color `#{$name}` not found in map!";
+  @return null;
+}
+
+$colors: (
+  verde-oscuro: #19766C,
+  verde-claro: #C7D684,
+  titulos-verde: #539893,
+  botones-verde: #82B37B,
+  blanco-fondo: #FFFFFF,
+  footer-negro: #000000,
+  letras-grises: #5D5D5D,
+  gris-claro: #cdcdcd,
+  success: #00cb30,
+  letra-botones:#81B47C,
+  
+);
+
+/*patron colores*/
+$principal: color(verde-claro);
+$secondary: color(verde-oscuro);
+
+/*Modificando variables de bootstrap*/
+$primary: $principal;
+$enable-shadows:true;
+$enable-gradients:true;
+$btn-padding-y:  .8rem;
+$btn-padding-x:  2.0rem;
+$btn-border-radius:20px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//funcion para obtener color
+//@function color($color){
+//@return map-get($colors,$color);
+//} esta tambien sirve
+
+
+
+//funcion para obtener imagenes
+@function img($img) {
+  @return url("../img/#{$img}");
+}
