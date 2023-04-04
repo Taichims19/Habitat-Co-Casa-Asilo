@@ -261,13 +261,14 @@ header {
             .conocer-mas {
                 height:60px;
                 width:120%;
-                border-radius: 50px;
+                
                 border-bottom:3px solid color(letra-botones);
                 border-left:3px solid color(letra-botones);
                 border-right:3px solid color(letra-botones);
             }
             .btn-residencial {
                 position:relative;
+                border-radius: 50px;
                 background-color:color(letra-botones);
                 top:60%;
                 width:27%;

@@ -12517,13 +12517,13 @@ header {
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas {
   height: 60px;
   width: 120%;
-  border-radius: 50px;
   border-bottom: 3px solid #81B47C;
   border-left: 3px solid #81B47C;
   border-right: 3px solid #81B47C;
 }
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .btn-residencial {
   position: relative;
+  border-radius: 50px;
   background-color: #81B47C;
   top: 60%;
   width: 27%;
