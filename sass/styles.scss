@@ -1,293 +1,460 @@
-
 @import "config.scss";
 //header nav
 header {
-    height: 25px;
+  height: 25px;
 }
 .navbar {
-    height: 64px;
-    width: 100%;  
+  height: 64px;
+  width: 100%;
 }
 
 .navbar .container-fluid {
+  width: 100%;
+
+  .collapse {
     width: 100%;
-    
-    .collapse {
-        width:100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .navbar-nav {
-    position:relative;
-    right:5%;
-    .active {
-        color:color(verde-claro)!important;
-    }
-    a {
-        font-size:16px;
-        font-weight: bold;
-        padding: 2px 2px;
-        color: color(titulos-verde);
-    }
-    a:hover {
-        color:color(verde-claro);
-        border-bottom:5px dotted color(verde-claro);
-    }
-    a i {
-        font-size:20px;
-        border:1px solid color(verde-oscuro);
-        border-radius:75%;
-        padding: 0px 3px;
-
-    }
-    .caja-icono-nav {
-        position:relative;
-        left:7%;
-    }
+  position: relative;
+  right: 5%;
+  .active {
+    color: color(verde-claro) !important;
+  }
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 2px;
+    color: color(titulos-verde);
+  }
+  a:hover {
+    color: color(verde-claro);
+    border-bottom: 5px dotted color(verde-claro);
+  }
+  a i {
+    font-size: 20px;
+    border: 1px solid color(verde-oscuro);
+    border-radius: 75%;
+    padding: 0px 3px;
+  }
+  .caja-icono-nav {
+    position: relative;
+    left: 7%;
+  }
 }
 
 .navbar-brand img {
-    height:39px;
-    width: 172px;
-    position: relative;
-    right:-10%;
+  height: 39px;
+  width: 172px;
+  position: relative;
+  right: -10%;
 }
 //seccion encabezado
 //cajones padres
 .encabezado-pt1 {
-    padding-bottom: 10px;
-    height:670px!important;
-    width: 100%;
-    .container-fluid {
-        height:670px!important;
-    }
-   
+  padding-bottom: 10px;
+  height: 670px !important;
+  width: 100%;
+  .container-fluid {
+    height: 670px !important;
+  }
 }
 //cols
-.row .cajon-encabezado, .row .cajon-encabezado2 {
-    height:670px;
-    box-sizing: border-box;
+.row .cajon-encabezado,
+.row .cajon-encabezado2 {
+  height: 670px;
+  box-sizing: border-box;
 }
 .head-left {
-    max-height: 670px !important;
-    
-    }
+  max-height: 670px !important;
+}
 .img-suramerica {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .cajon-encabezado {
-    position: relative;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .parrafo-head-left {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* para centrar vertical y horizontalmente */
+    z-index: 1; /* para que quede sobre la imagen */
+    h1 {
+      color: #fff;
+      font-size: 97px;
+      font-weight: 500;
+      line-height: 0.9;
+      font-stretch: condensed;
     }
-    .parrafo-head-left {
-        color: #fff;
-        font-size:25px;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* para centrar vertical y horizontalmente */
-        z-index: 1; /* para que quede sobre la imagen */
-        h1 {
-            color:#fff;
-            font-size:97px;
-            font-weight:500;
-            line-height:0.9;
-            font-stretch: condensed;
-        }
-        h6 {
-            font-size:21px;
-            letter-spacing: 1px;
-            position: relative;
-            left:9%;
-
-        }
-    }
-    .btn {
-        position: absolute;
-        color: color(letra-botones);
-        width: 59%;
-        top: 70%;
-        left: 22%;
-        z-index: 1; /* para que quede sobre la imagen */
-        padding: 7px 12px;
-        background-color:#fff;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-    }
-    .btn a {
-        color: color(letra-botones)!important;
-        text-decoration: none;
-        font-size: 21px;
-        
-    }
- }   
-
-//seccion media 
-.servicios-integrales {
-    .container-fluid {
-      max-width: 1100px;
-      min-height: 245px;
-      padding: 20px;
+    h6 {
+      font-size: 21px;
+      letter-spacing: 1px;
       position: relative;
-    
+      left: 9%;
     }
+  }
+  .btn {
+    position: absolute;
+    color: color(letra-botones);
+    width: 59%;
+    top: 70%;
+    left: 22%;
+    z-index: 1; /* para que quede sobre la imagen */
+    padding: 7px 12px;
+    background-color: #fff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  .btn a {
+    color: color(letra-botones) !important;
+    text-decoration: none;
+    font-size: 21px;
+  }
+}
 
-    .rectangulo {
-        max-width: 1100px;
-        width:950px;
-        height:155px;
-        padding: 22px 85px;
-        position:absolute;
-        margin-top: -4rem;
-        background-color: rgb(255, 255, 255);
-        display:flex;
-        align-items:center;
-        justify-content:space-evenly;
-        box-shadow: 0px 6px 0px -2.7px rgba(0, 0, 0, 0.3);
+//seccion media
+.servicios-integrales {
+  .container-fluid {
+    max-width: 1100px;
+    min-height: 245px;
+    padding: 20px;
+    position: relative;
+  }
 
-       .vineta-left1 {
-        padding-right: 20px;
-       }
-       .vineta-left2 {
-        padding-left:20px;
-       }
-       h2 {
-        font-size:40px;
-       }
-       p {
-        letter-spacing:2.5px;
-        font-size:35px;
-        font-weight:100;
-       }
-      }
- }
+  .rectangulo {
+    max-width: 1100px;
+    width: 950px;
+    height: 155px;
+    padding: 22px 85px;
+    position: absolute;
+    margin-top: -4rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 6px 0px -2.7px rgba(0, 0, 0, 0.3);
+
+    .vineta-left1 {
+      padding-right: 20px;
+    }
+    .vineta-left2 {
+      padding-left: 20px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      letter-spacing: 2.5px;
+      font-size: 35px;
+      font-weight: 100;
+    }
+  }
+}
 
 //servicios residenciales
 .servicios-residenciales {
-    
-    .row {
+  .row {
     height: 800px;
+  }
+  .residenciales-pt1 {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    .hoja-left {
+      width: 224px;
+      height: 169px;
+      position: relative;
+      left: -8%;
     }
-    .residenciales-pt1 {
-        display:flex;
-        justify-content:end;
-        align-items:start;
-        .hoja-left {
-            width: 224px;
-            height:169px;
-            position:relative;
-            left:3%;
-            
-        }
-    }
-    .residenciales-pt2 {
-        position:relative;
-        left:0.5%;
-        
-        .residenciales-pt2__1{
-            height: 110px;
-            h3 {
-                font-size:32px;
-                color:color(letras-grises);
-                line-height:0.8;
-                padding:5px;
-                font-weight:700;
-                padding-bottom: 1px;
-            }
-            p {
-                font-size:24px;
-                padding: 2px 4px;
-                letter-spacing:6.2px;
-                font-weight:400;
-                line-height: 1;
-            }
+  }
+  .residenciales-pt2 {
+    position: relative;
+    left: -1.5%;
 
-            hr {
-                border: 1px solid color(verde-oscuro);
-                margin-left: 16px;
-               
-            }
-        }
-        .residenciales-pt2__2 {
-            width:100%;
-            display: flex;
-            position:relative;
-            height:65%;
-            padding-left: 0;
-            .caja-verde-claro {
-                width:56%;
-                display:block;
-                height: 100%;
-                position:relative;
-                right:0.5%;
-            }
-            .servicios-residencia {
-                width:40%;
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                
-                align-items:start;
-                background-color: blue;
-                padding-left:5%;
-                height: 22%;
-                img {
-                    padding: 0px 10px 0px 0px;
-                }
-                p {
-                font-size: 17px;
-                font-weight:400;
-                }
-            }
-        }
-        .residenciales-pt2__3 {
-            position: relative;
-            bottom:51%;
-            left:16%;
-            width:65%;
-            .servicio-img-3 {
-                position: relative;
-                right: 12%;
-            }
-            .conocer-mas {
-                height:60px;
-                width:120%;
-                
-                border-bottom:3px solid color(letra-botones);
-                border-left:3px solid color(letra-botones);
-                border-right:3px solid color(letra-botones);
-            }
-            .btn-residencial {
-                position:relative;
-                border-radius: 50px;
-                background-color:color(letra-botones);
-                top:60%;
-                width:27%;
-                &:hover {
-                    background-color:rgba(#81B47C,0.9);
-                }
-                a {
-                    text-decoration:none;
-                    font-size:23px;
-                    letter-spacing:1px;
-                }
+    .residenciales-pt2__1 {
+      height: 110px;
+      h3 {
+        font-size: 32px;
+        color: color(letras-grises);
+        line-height: 0.8;
+        padding: 5px;
+        font-weight: 700;
+        padding-bottom: 1px;
+      }
+      p {
+        font-size: 24px;
+        padding: 2px 4px;
+        letter-spacing: 6.2px;
+        font-weight: 400;
+        line-height: 1;
+      }
 
-            }
-        }
-    
-       
+      hr {
+        border: 1px solid color(verde-oscuro);
+        margin-left: 16px;
+      }
     }
+    .residenciales-pt2__2 {
+      width: 100%;
+      display: flex;
+      position: relative;
+      height: 65%;
+      padding-left: 0;
+      .caja-verde-claro {
+        width: 55%;
+        display: block;
+        height: 100%;
+        position: relative;
+        right: 1%;
+      }
+      .servicios-residencia {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        padding-left: 5%;
+        height: 22%;
+        padding-top: 1%;
+        img {
+          padding: 0px 10px 0px 0px;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 400;
+        }
+      }
+    }
+    .residenciales-pt2__3 {
+      position: relative;
+      bottom: 52%;
+      left: 16%;
+      width: 65%;
+      .servicio-img-3 {
+        position: relative;
+        right: 12%;
+      }
+      .conocer-mas {
+        height: 60px;
+        width: 120%;
+
+        border-bottom: 3px solid color(letra-botones);
+        border-left: 3px solid color(letra-botones);
+        border-right: 3px solid color(letra-botones);
+      }
+      .btn-residencial {
+        position: relative;
+        border-radius: 50px;
+        background-color: color(letra-botones);
+        top: 60%;
+        width: 27%;
+        &:hover {
+          background-color: rgba(#81b47c, 0.9);
+        }
+        a {
+          text-decoration: none;
+          font-size: 23px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
 }
 .seccion-blanca {
-    height:300px;
-    max-height:500px;
+  height: 145px;
+}
+//servicios adicionales
+.servicios-adicionales {
+  padding-right: 0px;
+  .adicionales-pt2 {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    overflow: hidden;
+    .hoja-right {
+      height: 198px;
+      position: relative;
+      left: 21%;
+    }
+  }
+}
+.servicios-adicionales {
+  .row {
+    height: 800px;
+  }
+  .adicionales-pt1 {
+    position: relative;
+    left: 1%;
+    .adicionales-pt1__1 {
+      height: 110px;
+      position: relative;
+      right: 5%;
+      top: 0%;
+
+      h3 {
+        font-size: 32px;
+        color: color(letras-grises);
+        line-height: 0.8;
+        padding: 5px;
+        font-weight: 700;
+        padding-bottom: 1px;
+      }
+      p {
+        font-size: 24px;
+        padding: 2px 4px;
+        letter-spacing: 6.2px;
+        font-weight: 400;
+        line-height: 1;
+        position: relative;
+        right: 4%;
+      }
+
+      hr {
+        border: 1px solid color(verde-oscuro);
+        margin-left: 16px;
+        position: relative;
+        right: 4%;
+      }
+    }
+  }
+  .adicionales-pt1 {
+    .adicionales-pt1__2 {
+      width: 100%;
+      display: flex;
+      position: relative;
+      height: 65%;
+      top: 3.5%;
+      left: 0%;
+      padding-left: 0;
+      .caja-verde-claro {
+        width: 60%;
+        display: block;
+        height: 115%;
+        position: relative;
+        right: 3.5%;
+        margin-top: 1%;
+      }
+      .servicios-residencia {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
+        background-color: 8f8fab;
+        padding-left: 1%;
+        height: 22%;
+        padding-top: 0%;
+        letter-spacing: 1.5px;
+        img {
+          padding: 0px 10px 0px 15px;
+        }
+        p {
+          font-size: 16px;
+          color: rgba(#5d5d5d, 0.8);
+          font-weight: 700;
+          text-align: end;
+          margin-bottom: 8px;
+          position: relative;
+          right: 15%;
+        }
+        .caja-centro {
+          position: absolute;
+          right: 63%;
+          top: 9%;
+          line-height: 1.3;
+          .p-centro {
+            position: relative;
+            left: 1%;
+          }
+          img {
+            width: 47px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .adicionales-pt1 {
+    .adicionales-pt1__3 {
+      position: relative;
+      bottom: 45%;
+      right: 8.2%;
+      width: 88%;
+      .servicio-img-3 {
+        position: relative;
+        right: 9%;
+      }
+      .conocer-mas-2 {
+        height: 60px;
+        width: 92%;
+        position: relative;
+        left: 8%;
+        border-bottom: 3px solid color(letra-botones);
+        border-left: 3px solid color(letra-botones);
+        border-right: 3px solid color(letra-botones);
+      }
+      .btn-adicionales {
+        position: relative;
+        border-radius: 50px;
+        background-color: color(letra-botones);
+        top: 60%;
+        width: 27%;
+        &:hover {
+          background-color: rgba(#81b47c, 0.9);
+        }
+        a {
+          text-decoration: none;
+          font-size: 23px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+.seccion-blanca-2 {
+  height: 145px;
+}
+//seccion 10años
+.seccion-diezaños {
+  .diezañospt1 {
+    padding-top: 62px;
+    position: relative;
+    right: 1%;
+    .diezaños-img {
+      width: 280px;
+      height: 360px;
+    }
+  }
+}
+.seccion-diezaños {
+  .diezañospt2 {
+    .caja-diezaños {
+      padding-top: 10px;
+      position: relative;
+      top: 21%;
+      left: 2%;
+      color: #787878;
+    }
+    .vermas-diezaños {
+      color:color(verde-oscuro);
+      text-decoration: none;
+    }
+  }
 }
