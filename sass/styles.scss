@@ -265,7 +265,7 @@ header {
         top: 60%;
         width: 27%;
         &:hover {
-          background-color: rgba(#81b47c, 0.9);
+          background-color: rgba(#19766C, 1);
         }
         a {
           text-decoration: none;
@@ -412,12 +412,12 @@ header {
       }
       .btn-adicionales {
         position: relative;
+        top: 60%;
         border-radius: 50px;
         background-color: color(letra-botones);
-        top: 60%;
         width: 27%;
         &:hover {
-          background-color: rgba(#81b47c, 0.9);
+          background-color: rgba(#19766C, 1);
         }
         a {
           text-decoration: none;
@@ -439,22 +439,184 @@ header {
     right: 1%;
     .diezaños-img {
       width: 280px;
-      height: 360px;
+      height: 380px;
     }
   }
 }
 .seccion-diezaños {
+  height: 440px;
   .diezañospt2 {
+    height: 440px;
     .caja-diezaños {
       padding-top: 10px;
       position: relative;
-      top: 21%;
+      top: 22%;
       left: 2%;
-      color: #787878;
+      color: rgba(#787878, 0.8);
     }
     .vermas-diezaños {
-      color:color(verde-oscuro);
+      color: color(verde-oscuro);
       text-decoration: none;
+      position: relative;
+      bottom: 21%;
+      &:hover {
+        color: color(verde-claro);
+        font-size: 18px;
+      }
+      .span-diezaños {
+        font-size: 60px;
+        position: relative;
+        top: 0%;
+        &:hover {
+          color: color(verde-claro);
+          font-size: 66px;
+        }
+      }
+    }
+    .btn-diezaños {
+      position: relative;
+      top: 16%;
+      left: 2%;
+      border-radius: 50px;
+      background-color: color(letra-botones);
+      width: 38%;
+      padding: 6px;
+      &:hover {
+        background-color: rgba(#19766C, 1);
+      }
+      a {
+        text-decoration: none;
+        font-size: 22px;
+      }
+    }
+  }
+}
+//seccion contenedor-hoja-futuro
+.contenedor-sqn-info {
+  height: 120px;
+  .caja-sqn-info {
+    height: 130px;
+    overflow: hidden;
+    .sqn-info {
+      position: relative;
+      right: 2%;
+    }
+  }
+}
+
+//seccion galeria fotos
+.galeria-fotos {
+  height:480px;
+  .galeria-1 {
+    position:relative;
+    right:0;
+    padding:0px 0px;
+    .galeria-1__ajuste1, .galeria-1__ajuste2 {
+      padding: 0px 0px;
+      width: 260px;
+    }
+
+    .galeria-1__ajuste2 img {
+      height:204px;
+    }
+    .galeria-1__ajuste1 img {
+      height:204px;
+    }
+  }
+  .galeria-2 {
+    position:relative;
+    right:1.5%;
+  }
+  .galeria-3 {
+    position: relative;
+    right: 1.5%;
+  }
+}
+//seccion Titulo noticias 
+.seccion-noticias {
+  height:200px;
+  .titulo-noticias {
+    color:color(verde-oscuro);
+  }
+  .img-titulo-noticias {
+    width:165px;
+  }
+}
+//Seccion Noticias 
+.contenedor-noticias {
+  .caja-2min {
+    height:330px;
+    padding: 0px;
+    .card-caja-1 {
+      height:330px;
+      overflow:hidden;
+      border-radius: 0px;
+    }
+  }
+}
+.caja-card-noticias {
+  .card{
+    border-radius:0px;
+    border:none;
+    &:first-child {
+      padding-left:0px;
+    }
+    &:last-child {
+      padding-right:0px;
+    }
+    .card-body {
+      padding-bottom:0px;
+      padding-left:2px;
+    }
+  }
+  h5 {
+    border:1px solid color(verde-oscuro);
+    background-color:color(letra-botones);
+    padding:2px;
+    color:#fff;
+    display:inline-block;
+  }
+  small {
+    font-size:16px;
+  }
+  p {
+    font-size:18px;
+    font-weight:400;
+  }
+}
+
+
+//Seccion Boton Ver Todos
+.btn-ver-todos {
+  position: relative;
+  top: 16%;
+  left: 2%;
+  border-radius: 50px;
+  background-color: color(letra-botones);
+  width: 14%;
+  padding: 6px;
+  &:hover {
+    background-color: rgba(#19766C, 1);
+  }
+  a {
+    text-decoration: none;
+    font-size: 22px;
+  }
+}
+
+//Seccion Aliados y Logos 
+.aliados-logos {
+  height:250px;
+
+  .cajon-aliados {
+    p {
+      position:relative;
+      font-size:50px;
+      opacity:0.8;
+    }
+    h5 {
+      position:absolute;
+      color:color(verde-oscuro);
     }
   }
 }

@@ -12530,7 +12530,7 @@ header {
   width: 27%;
 }
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .btn-residencial:hover {
-  background-color: rgba(129, 180, 124, 0.9);
+  background-color: #19766c;
 }
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .btn-residencial a {
   text-decoration: none;
@@ -12686,13 +12686,13 @@ header {
 }
 .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .btn-adicionales {
   position: relative;
+  top: 60%;
   border-radius: 50px;
   background-color: #81B47C;
-  top: 60%;
   width: 27%;
 }
 .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .btn-adicionales:hover {
-  background-color: rgba(129, 180, 124, 0.9);
+  background-color: #19766c;
 }
 .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .btn-adicionales a {
   text-decoration: none;
@@ -12711,17 +12711,172 @@ header {
 }
 .seccion-diezaños .diezañospt1 .diezaños-img {
   width: 280px;
-  height: 360px;
+  height: 380px;
 }
 
+.seccion-diezaños {
+  height: 440px;
+}
+.seccion-diezaños .diezañospt2 {
+  height: 440px;
+}
 .seccion-diezaños .diezañospt2 .caja-diezaños {
   padding-top: 10px;
   position: relative;
-  top: 21%;
+  top: 22%;
   left: 2%;
-  color: #787878;
+  color: rgba(120, 120, 120, 0.8);
 }
 .seccion-diezaños .diezañospt2 .vermas-diezaños {
   color: #19766C;
   text-decoration: none;
+  position: relative;
+  bottom: 21%;
+}
+.seccion-diezaños .diezañospt2 .vermas-diezaños:hover {
+  color: #C7D684;
+  font-size: 18px;
+}
+.seccion-diezaños .diezañospt2 .vermas-diezaños .span-diezaños {
+  font-size: 60px;
+  position: relative;
+  top: 0%;
+}
+.seccion-diezaños .diezañospt2 .vermas-diezaños .span-diezaños:hover {
+  color: #C7D684;
+  font-size: 66px;
+}
+.seccion-diezaños .diezañospt2 .btn-diezaños {
+  position: relative;
+  top: 16%;
+  left: 2%;
+  border-radius: 50px;
+  background-color: #81B47C;
+  width: 38%;
+  padding: 6px;
+}
+.seccion-diezaños .diezañospt2 .btn-diezaños:hover {
+  background-color: #19766c;
+}
+.seccion-diezaños .diezañospt2 .btn-diezaños a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.contenedor-sqn-info {
+  height: 120px;
+}
+.contenedor-sqn-info .caja-sqn-info {
+  height: 130px;
+  overflow: hidden;
+}
+.contenedor-sqn-info .caja-sqn-info .sqn-info {
+  position: relative;
+  right: 2%;
+}
+
+.galeria-fotos {
+  height: 480px;
+}
+.galeria-fotos .galeria-1 {
+  position: relative;
+  right: 0;
+  padding: 0px 0px;
+}
+.galeria-fotos .galeria-1 .galeria-1__ajuste1, .galeria-fotos .galeria-1 .galeria-1__ajuste2 {
+  padding: 0px 0px;
+  width: 260px;
+}
+.galeria-fotos .galeria-1 .galeria-1__ajuste2 img {
+  height: 204px;
+}
+.galeria-fotos .galeria-1 .galeria-1__ajuste1 img {
+  height: 204px;
+}
+.galeria-fotos .galeria-2 {
+  position: relative;
+  right: 1.5%;
+}
+.galeria-fotos .galeria-3 {
+  position: relative;
+  right: 1.5%;
+}
+
+.seccion-noticias {
+  height: 200px;
+}
+.seccion-noticias .titulo-noticias {
+  color: #19766C;
+}
+.seccion-noticias .img-titulo-noticias {
+  width: 165px;
+}
+
+.contenedor-noticias .caja-2min {
+  height: 330px;
+  padding: 0px;
+}
+.contenedor-noticias .caja-2min .card-caja-1 {
+  height: 330px;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.caja-card-noticias .card {
+  border-radius: 0px;
+  border: none;
+}
+.caja-card-noticias .card:first-child {
+  padding-left: 0px;
+}
+.caja-card-noticias .card:last-child {
+  padding-right: 0px;
+}
+.caja-card-noticias .card .card-body {
+  padding-bottom: 0px;
+  padding-left: 2px;
+}
+.caja-card-noticias h5, .caja-card-noticias .h5 {
+  border: 1px solid #19766C;
+  background-color: #81B47C;
+  padding: 2px;
+  color: #fff;
+  display: inline-block;
+}
+.caja-card-noticias small, .caja-card-noticias .small {
+  font-size: 16px;
+}
+.caja-card-noticias p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-ver-todos {
+  position: relative;
+  top: 16%;
+  left: 2%;
+  border-radius: 50px;
+  background-color: #81B47C;
+  width: 14%;
+  padding: 6px;
+}
+.btn-ver-todos:hover {
+  background-color: #19766c;
+}
+.btn-ver-todos a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.aliados-logos {
+  height: 250px;
+}
+.aliados-logos .cajon-aliados p {
+  position: relative;
+  font-size: 50px;
+  opacity: 0.8;
+}
+.aliados-logos .cajon-aliados h5, .aliados-logos .cajon-aliados .h5 {
+  position: absolute;
+  color: #19766C;
 }
