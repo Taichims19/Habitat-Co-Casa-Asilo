@@ -4,12 +4,13 @@ header {
   height: 25px;
 }
 .navbar {
-  height: 64px;
+ 
   width: 100%;
 }
 
 .navbar .container-fluid {
   width: 100%;
+  
 
   .collapse {
     width: 100%;
@@ -58,7 +59,8 @@ header {
   height: 670px !important;
   width: 100%;
   .container-fluid {
-    height: 670px !important;
+    // height: 670px !important;
+    height:max-content;
   }
 }
 //cols
@@ -71,9 +73,8 @@ header {
   max-height: 670px !important;
 }
 .img-suramerica {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  
 }
 .cajon-encabezado {
   position: relative;
@@ -130,6 +131,7 @@ header {
 
 //seccion media
 .servicios-integrales {
+  height:max-content;
   .container-fluid {
     max-width: 1100px;
     min-height: 245px;
@@ -169,6 +171,7 @@ header {
 
 //servicios residenciales
 .servicios-residenciales {
+  position:relative;
   .row {
     height: 800px;
   }
@@ -176,6 +179,7 @@ header {
     display: flex;
     justify-content: end;
     align-items: start;
+    position:relative;
     .hoja-left {
       width: 224px;
       height: 169px;
@@ -189,6 +193,7 @@ header {
 
     .residenciales-pt2__1 {
       height: 110px;
+      position:relative;
       h3 {
         font-size: 32px;
         color: color(letras-grises);
@@ -265,7 +270,7 @@ header {
         top: 60%;
         width: 27%;
         &:hover {
-          background-color: rgba(#19766C, 1);
+          background-color: rgba(#19766c, 1);
         }
         a {
           text-decoration: none;
@@ -417,7 +422,7 @@ header {
         background-color: color(letra-botones);
         width: 27%;
         &:hover {
-          background-color: rgba(#19766C, 1);
+          background-color: rgba(#19766c, 1);
         }
         a {
           text-decoration: none;
@@ -482,7 +487,7 @@ header {
       width: 38%;
       padding: 6px;
       &:hover {
-        background-color: rgba(#19766C, 1);
+        background-color: rgba(#19766c, 1);
       }
       a {
         text-decoration: none;
@@ -506,87 +511,90 @@ header {
 
 //seccion galeria fotos
 .galeria-fotos {
-  height:480px;
+  height: 480px;
   .galeria-1 {
-    position:relative;
-    right:0;
-    padding:0px 0px;
-    .galeria-1__ajuste1, .galeria-1__ajuste2 {
+    position: relative;
+    right: 0;
+    padding: 0px 0px;
+    .galeria-1__ajuste1,
+    .galeria-1__ajuste2 {
       padding: 0px 0px;
       width: 260px;
     }
 
     .galeria-1__ajuste2 img {
-      height:204px;
+      height: 204px;
     }
     .galeria-1__ajuste1 img {
-      height:204px;
+      height: 204px;
     }
   }
   .galeria-2 {
-    position:relative;
-    right:1.5%;
+    position: relative;
+    right: 1.5%;
   }
   .galeria-3 {
     position: relative;
     right: 1.5%;
   }
 }
-//seccion Titulo noticias 
+//seccion Titulo noticias
 .seccion-noticias {
-  height:200px;
+  height: 200px;
   .titulo-noticias {
-    color:color(verde-oscuro);
+    color: color(verde-oscuro);
   }
   .img-titulo-noticias {
-    width:165px;
+    width: 165px;
   }
 }
-//Seccion Noticias 
+//Seccion Noticias
 .contenedor-noticias {
   .caja-2min {
-    height:330px;
+    height: 330px;
     padding: 0px;
     .card-caja-1 {
-      height:330px;
-      overflow:hidden;
+      height: 330px;
+      overflow: hidden;
       border-radius: 0px;
     }
   }
 }
 .caja-card-noticias {
-  .card{
-    border-radius:0px;
-    border:none;
+  .card {
+    border-radius: 0px;
+    border: none;
     &:first-child {
-      padding-left:0px;
+      padding-left: 0px;
     }
     &:last-child {
-      padding-right:0px;
+      padding-right: 0px;
     }
     .card-body {
-      padding-bottom:0px;
-      padding-left:2px;
+      padding-bottom: 0px;
+      padding-left: 2px;
     }
   }
   h5 {
-    border:1px solid color(verde-oscuro);
-    background-color:color(letra-botones);
-    padding:2px;
-    color:#fff;
-    display:inline-block;
+    border: 1px solid color(verde-oscuro);
+    background-color: color(letra-botones);
+    padding: 2px;
+    color: #fff;
+    display: inline-block;
   }
   small {
-    font-size:16px;
+    font-size: 16px;
   }
   p {
-    font-size:18px;
-    font-weight:400;
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 
-
 //Seccion Boton Ver Todos
+.contenedor-ver-todos {
+  height: 150px;
+}
 .btn-ver-todos {
   position: relative;
   top: 16%;
@@ -596,7 +604,7 @@ header {
   width: 14%;
   padding: 6px;
   &:hover {
-    background-color: rgba(#19766C, 1);
+    background-color: rgba(#19766c, 1);
   }
   a {
     text-decoration: none;
@@ -604,19 +612,144 @@ header {
   }
 }
 
-//Seccion Aliados y Logos 
+//Seccion Aliados y Logos
 .aliados-logos {
-  height:250px;
+  height: 250px;
 
-  .cajon-aliados {
-    p {
-      position:relative;
-      font-size:50px;
-      opacity:0.8;
+  .contenedor-logos {
+    width: 90%;
+  }
+  .logos-pt1 {
+    .cajon-aliados {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .p-aliados {
+        position: relative;
+        left: 8%;
+        font-weight: 700;
+        line-height: 0;
+        font-size: 100px;
+        opacity: 0.2;
+        color: color(verde-claro);
+      }
+      .h5-aliados {
+        position: absolute;
+        color: color(verde-oscuro);
+        font-size: 30px;
+        left: 9%;
+        top: 1%;
+      }
     }
-    h5 {
-      position:absolute;
-      color:color(verde-oscuro);
+  }
+  .logos-pt2 {
+    position: relative;
+
+    .linea-vertical {
+      border-right: 1px solid #d3d3d3;
+      height: 80px;
+      width: 1px;
+      display: inherit !important;
+      position: absolute;
+      right: 100%;
+    }
+    .imagenes-aliados {
+      width: 100%;
+      .img-logo-univ {
+        position: relative;
+        left: 20%;
+      }
+      .img-tena {
+        position: relative;
+        left: 10%;
+      }
+    }
+  }
+}
+//grupo-sura
+.cajon-grupo-sura {
+  height: 110px;
+
+  .columna-grupo-sura {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .encabezado-pt1 {
+    height: 450px!important;
+    .cajon-encabezado, .cajon-encabezado2 {
+      height: 450px;
+    }
+    .cajon-encabezado {
+      .btn {
+        width: 78%;
+        top: 74%;
+        left: 11%;
+      }
+    }
+  }
+  .servicios-integrales {
+    height: 300px;
+    .rectangulo {
+      height: 300px;
+      min-width:700px;
+      max-width:767px;
+    }
+  }
+  .servicios-residenciales {
+    .row {
+      height: 600px;
+    }
+    .residenciales-pt1 {
+      justify-content: center;
+      .hoja-left {
+        left: 6%;
+      }
+    }
+    .residenciales-pt2 {
+      .residenciales-pt2__1 {
+        justify-content: center;
+        width: 65%;
+      }
+      .residenciales-pt2__2 {
+        .servicios-residencia {
+          width:45%;
+        }
+      }
+      .residenciales-pt2__3 {
+        left: 3%;
+        width: 115%;
+        
+        .servicio-img-3 {
+          width:100%;
+          right: 0%;
+        }
+        .conocer-mas {
+          width: 76%;
+          position: relative;
+          left: 12%;
+          .btn-residencial {
+            width: 43%;
+          }
+        }
+      }
+    }
+  }
+  .servicios-adicionales {
+    .adicionales-pt1 {
+      .adicionales-pt1__1 {
+        
+        width: 65%;
+      }
+      .adicionales-pt1__3 {
+        .img-adicionales {
+          width:100%;
+        }
+      }
+    }
+    .adicionales-pt2 {
+      overflow: visible;
     }
   }
 }

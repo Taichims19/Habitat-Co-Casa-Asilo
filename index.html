@@ -25,34 +25,45 @@
   <!-- Barra de Navegacion -->
   <header class="container-fluid bg-secondary">
   </header>
-  <nav class="navbar navbar-expand-md  bg-white navbar-light">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="row collapse navbar-collapse   id=" navbar-toggler">
+      <div class="row collapse navbar-collapse" id="navbarNavDropdown">
         <a class="navbar-brand col-lg-2" href="#">
           <img src="img/menu-logo.jpg" width="50" alt="logo de la pagina">
         </a>
         <ul class="navbar-nav col-lg-8 d-flex justify-content-evenly align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sobre-mi-id">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos-id">Conocenos</a>
+            <a class="nav-link" href="#">Conócenos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+                  <img src="img/item-1.jpg" width="50" alt="logo de la pagina">
+                </a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <img src="img/item-2.jpg" width="50" alt="logo de la pagina">
+
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonios-id">Servicios</a>
+            <a class="nav-link" href="#">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto-id">FAQ</a>
+            <a class="nav-link" href="#">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto-id">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto-id">Contactanos</a>
+            <a class="nav-link" href="#">Contáctanos</a>
           </li>
           <li class="nav-item d-flex caja-icono-nav">
             <a class="nav-link" href="#contacto-id">
@@ -69,11 +80,12 @@
       </div>
     </div>
   </nav>
+
   <!-- Seccion primera parte -->
   <section class="encabezado-pt1">
     <div class="container-fluid " style="overflow: hidden;">
       <div class="row">
-        <div class="col-12 col-md-4 col-lg-4 p-0 cajon-encabezado ">
+        <div class="col-12 col-sm-12  col-md-4 col-lg-4 p-0 cajon-encabezado ">
           <img class="head-left " src="img/head-left.jpg" alt="head-left " srcset="">
           <div class="parrafo-head-left">
             <h1>ELIGE VIVIR </h1>
@@ -82,8 +94,8 @@
           <button type="button" class="btn btn-white btn-lg"><a href="http://" target="_blank"
               rel="noopener noreferrer">Contacta un asesor</a></button>
         </div>
-        <div class="col-12 col-md-8 col-lg-8 p-0 cajon-encabezado2 ">
-          <img src="img/suramérica-min.jpg" alt="img-suramerica" class="img-suramerica">
+        <div class="col-12 col-sm-12 col-md-8  col-lg-8 p-0 cajon-encabezado2 ">
+          <img src="img/suramérica-min.jpg" alt="img-suramerica" class="img-suramerica w-100 h-100">
         </div>
       </div>
     </div>
@@ -93,16 +105,16 @@
     <div class="container-fluid">
       <div class="container text-center d-flex justify-content-evenly">
         <div class="row  rectangulo">
-          <div class="col12 col-md-2 col-lg-2">
+          <div class="col12 col-md-1 col-lg-2">
             <img class="vineta-left1" src="img/vineta-left-tittle.png" alt="Vineta-left">
           </div>
-          <div class="col12 col-md-8 col-lg-8">
+          <div class="col12 col-md-6 col-lg-8">
             <div class="servicios-integrales-info">
               <h2 class="text-secondary">Servicios integrales para el</h2>
               <p class="text-secondary"> cuidado del adulto mayor</p>
             </div>
           </div>
-          <div class="col12 col-md-2 col-lg-2">
+          <div class="col12 col-md-1 col-lg-2">
             <img class="vineta-left2" src="img/vineta-right-tittle.png" alt="Vineta-right">
           </div>
         </div>
@@ -170,7 +182,7 @@
 
           </div>
           <div class="col12 adicionales-pt1__3">
-            <img src="img/adicionales.jpg" alt="">
+            <img src="img/adicionales.jpg" alt="" class="img-adicionales">
             <div class="conocer-mas-2 bg-white  text-center">
               <button type="button" class="btn btn-adicionales btn-lg"><a href="http://" target="_blank"
                   rel="noopener noreferrer" class="text-white">Conocer más</a></button>
@@ -316,25 +328,36 @@
     </div>
   </section>
   <!-- Boton Ver Todos -->
-  <section class="container-fluid text-center">
+  <section class="container-fluid contenedor-ver-todos  text-center">
     <button type="button" class="btn btn-ver-todos  btn-lg"><a href="http://" target="_blank" rel="noopener noreferrer"
         class="text-white">Ver todos</a></button>
   </section>
   <!-- Seccion Aliados -->
-  <section class="container-fluid aliados-logos d-flex justify-content-center">
-    <div class="row">
-      <div class="col-10 d-flex align-items-center">
-        <div class="row">
-          <div class="cajon-aliados col-12 col-md-5 col-lg-5">
-            <h5>Aliados</h5>
-            <p>Aliados</p>
-          </div>
-          <div class="linea-vertical col-12 col-md-1 col-lg-1 "></div>
-          <div class="imagenes-aliados col-12 col-md-6 col-lg-6">
-            <img src="img/tena.png" alt="img-tena" srcset="">
-            <img src="img/logo-univ.png" alt="img-logo-uni" srcset="">
-          </div>
+  <section class="container-fluid aliados-logos d-flex justify-content-center align-items-center ">
+    <div class="row contenedor-logos d-flex justify-content-center align-items-center ">
+      <div class="col-12 col-md-6 logos-pt1 col-lg-6">
+        <div class="cajon-aliados col-12 col-md-6 col-lg-6">
+          <h5 class="h5-aliados">Aliados</h5>
+          <p class="p-aliados">ALIADOS</p>
         </div>
+      </div>
+      <div class="col-12 col-md-6 logos-pt2 col-lg-6">
+        <div class="linea-vertical "></div>
+        <div class="imagenes-aliados col-12 col-md-6 col-lg-6">
+          <img src="img/tena.png" class="img-tena" alt="img-tena" srcset="">
+          <img src="img/logo-univ.png" class="img-logo-univ" alt="img-logo-uni" srcset="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Grupo Sura -->
+  <section class="container-fluid cajon-grupo-sura bg-light d-flex justify-content-center align-items-center ">
+    <div class="row columna-grupo-sura">
+      <div class="col-12 cajon-filial col-md-7 col-lg-7 ">
+        <img src="img/filial.png" alt="" srcset="">
+      </div>
+      <div class="col-12 cajon-vigilado col-md-5 col-lg-5 ">
+        <img src="img/vigilado.png" alt="" srcset="">
       </div>
     </div>
   </section>

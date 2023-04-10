@@ -12245,7 +12245,6 @@ header {
 }
 
 .navbar {
-  height: 64px;
   width: 100%;
 }
 
@@ -12303,7 +12302,9 @@ header {
   width: 100%;
 }
 .encabezado-pt1 .container-fluid, .encabezado-pt1 .container-sm, .encabezado-pt1 .container-md, .encabezado-pt1 .container-lg, .encabezado-pt1 .container-xl, .encabezado-pt1 .container-xxl {
-  height: 670px !important;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .row .cajon-encabezado,
@@ -12318,8 +12319,6 @@ header {
 }
 
 .img-suramerica {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12376,6 +12375,11 @@ header {
   font-size: 21px;
 }
 
+.servicios-integrales {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
 .servicios-integrales .container-fluid, .servicios-integrales .container-sm, .servicios-integrales .container-md, .servicios-integrales .container-lg, .servicios-integrales .container-xl, .servicios-integrales .container-xxl {
   max-width: 1100px;
   min-height: 245px;
@@ -12417,6 +12421,9 @@ header {
   font-weight: 100;
 }
 
+.servicios-residenciales {
+  position: relative;
+}
 .servicios-residenciales .row {
   height: 800px;
 }
@@ -12430,6 +12437,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  position: relative;
 }
 .servicios-residenciales .residenciales-pt1 .hoja-left {
   width: 224px;
@@ -12443,6 +12451,7 @@ header {
 }
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__1 {
   height: 110px;
+  position: relative;
 }
 .servicios-residenciales .residenciales-pt2 .residenciales-pt2__1 h3, .servicios-residenciales .residenciales-pt2 .residenciales-pt2__1 .h3 {
   font-size: 32px;
@@ -12783,7 +12792,8 @@ header {
   right: 0;
   padding: 0px 0px;
 }
-.galeria-fotos .galeria-1 .galeria-1__ajuste1, .galeria-fotos .galeria-1 .galeria-1__ajuste2 {
+.galeria-fotos .galeria-1 .galeria-1__ajuste1,
+.galeria-fotos .galeria-1 .galeria-1__ajuste2 {
   padding: 0px 0px;
   width: 260px;
 }
@@ -12851,6 +12861,10 @@ header {
   font-weight: 400;
 }
 
+.contenedor-ver-todos {
+  height: 150px;
+}
+
 .btn-ver-todos {
   position: relative;
   top: 16%;
@@ -12871,12 +12885,123 @@ header {
 .aliados-logos {
   height: 250px;
 }
-.aliados-logos .cajon-aliados p {
-  position: relative;
-  font-size: 50px;
-  opacity: 0.8;
+.aliados-logos .contenedor-logos {
+  width: 90%;
 }
-.aliados-logos .cajon-aliados h5, .aliados-logos .cajon-aliados .h5 {
+.aliados-logos .logos-pt1 .cajon-aliados {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.aliados-logos .logos-pt1 .cajon-aliados .p-aliados {
+  position: relative;
+  left: 8%;
+  font-weight: 700;
+  line-height: 0;
+  font-size: 100px;
+  opacity: 0.2;
+  color: #C7D684;
+}
+.aliados-logos .logos-pt1 .cajon-aliados .h5-aliados {
   position: absolute;
   color: #19766C;
+  font-size: 30px;
+  left: 9%;
+  top: 1%;
+}
+.aliados-logos .logos-pt2 {
+  position: relative;
+}
+.aliados-logos .logos-pt2 .linea-vertical {
+  border-right: 1px solid #d3d3d3;
+  height: 80px;
+  width: 1px;
+  display: inherit !important;
+  position: absolute;
+  right: 100%;
+}
+.aliados-logos .logos-pt2 .imagenes-aliados {
+  width: 100%;
+}
+.aliados-logos .logos-pt2 .imagenes-aliados .img-logo-univ {
+  position: relative;
+  left: 20%;
+}
+.aliados-logos .logos-pt2 .imagenes-aliados .img-tena {
+  position: relative;
+  left: 10%;
+}
+
+.cajon-grupo-sura {
+  height: 110px;
+}
+.cajon-grupo-sura .columna-grupo-sura {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .encabezado-pt1 {
+    height: 450px !important;
+  }
+  .encabezado-pt1 .cajon-encabezado, .encabezado-pt1 .cajon-encabezado2 {
+    height: 450px;
+  }
+  .encabezado-pt1 .cajon-encabezado .btn {
+    width: 78%;
+    top: 74%;
+    left: 11%;
+  }
+  .servicios-integrales {
+    height: 300px;
+  }
+  .servicios-integrales .rectangulo {
+    height: 300px;
+    min-width: 700px;
+    max-width: 767px;
+  }
+  .servicios-residenciales .row {
+    height: 600px;
+  }
+  .servicios-residenciales .residenciales-pt1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .servicios-residenciales .residenciales-pt1 .hoja-left {
+    left: 6%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 65%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__2 .servicios-residencia {
+    width: 45%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
+    left: 3%;
+    width: 115%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .servicio-img-3 {
+    width: 100%;
+    right: 0%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas {
+    width: 76%;
+    position: relative;
+    left: 12%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas .btn-residencial {
+    width: 43%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__1 {
+    width: 65%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .img-adicionales {
+    width: 100%;
+  }
+  .servicios-adicionales .adicionales-pt2 {
+    overflow: visible;
+  }
 }
