@@ -12386,6 +12386,14 @@ header {
   padding: 20px;
   position: relative;
 }
+.servicios-integrales .container-integral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 .servicios-integrales .rectangulo {
   max-width: 1100px;
   width: 950px;
@@ -12789,13 +12797,29 @@ header {
 }
 .galeria-fotos .galeria-1 {
   position: relative;
+  width: 41.66666667%;
   right: 0;
   padding: 0px 0px;
+}
+.galeria-fotos .galeria-1 .galeria-1__1,
+.galeria-fotos .galeria-1 .galeria-1__2,
+.galeria-fotos .galeria-1 .galeria-1__3,
+.galeria-fotos .galeria-1 .galeria-1__4 {
+  width: 50%;
 }
 .galeria-fotos .galeria-1 .galeria-1__ajuste1,
 .galeria-fotos .galeria-1 .galeria-1__ajuste2 {
   padding: 0px 0px;
   width: 260px;
+}
+.galeria-fotos .galeria-1 .gall-1,
+.galeria-fotos .galeria-1 .gall-2 {
+  width: 100%;
+}
+.galeria-fotos .galeria-1 .gall-3,
+.galeria-fotos .galeria-1 .gall-4 {
+  max-width: 100%;
+  height: auto;
 }
 .galeria-fotos .galeria-1 .galeria-1__ajuste2 img {
   height: 204px;
@@ -12806,10 +12830,13 @@ header {
 .galeria-fotos .galeria-2 {
   position: relative;
   right: 1.5%;
+  width: auto;
+  padding: 0.25rem;
 }
 .galeria-fotos .galeria-3 {
   position: relative;
   right: 1.5%;
+  width: 16.66667%;
 }
 
 .seccion-noticias {
@@ -12830,6 +12857,26 @@ header {
   height: 330px;
   overflow: hidden;
   border-radius: 0px;
+}
+
+.caja-2min img {
+  opacity: 0.8;
+}
+.caja-2min .card-img-overlay {
+  position: absolute;
+  top: 34%;
+  left: 5%;
+  display: inline-block;
+}
+.caja-2min h5, .caja-2min .h5 {
+  border: 1px solid #19766C;
+  background-color: #81B47C;
+  padding: 2px;
+  color: #fff;
+  display: inline-block;
+}
+.caja-2min small, .caja-2min .small {
+  font-size: 16px;
 }
 
 .caja-card-noticias .card {
@@ -12858,7 +12905,7 @@ header {
 }
 .caja-card-noticias p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .contenedor-ver-todos {
@@ -12933,17 +12980,146 @@ header {
 }
 
 .cajon-grupo-sura {
-  height: 110px;
+  height: 130px;
 }
 .cajon-grupo-sura .columna-grupo-sura {
   width: 100%;
 }
+.cajon-grupo-sura .columna-grupo-sura .cajon-filial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1320px) {
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
+    left: 0%;
+    width: 102%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .servicio-img-3 {
+    width: 95%;
+    left: 2%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas {
+    position: relative;
+    right: -10%;
+    width: 77%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas .btn-residencial {
+    width: 40%;
+  }
+  .servicios-adicionales .adicionales-pt2 {
+    overflow: visible;
+  }
+  .servicios-adicionales .adicionales-pt2 .hoja-right {
+    left: 5%;
+  }
+  .galeria-fotos {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .galeria-fotos .columna-galeria {
+    width: 100%;
+  }
+  .galeria-fotos .galeria-1 {
+    width: 41.66667%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    padding: 9px;
+  }
+  .galeria-fotos .galeria-1 .gall-1,
+  .galeria-fotos .galeria-1 .gall-2 {
+    width: 100%;
+  }
+  .galeria-fotos .galeria-1 .gall-3,
+  .galeria-fotos .galeria-1 .gall-4 {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria-fotos .galeria-1 .galeria-1__1,
+  .galeria-fotos .galeria-1 .galeria-1__2,
+  .galeria-fotos .galeria-1 .galeria-1__3,
+  .galeria-fotos .galeria-1 .galeria-1__4 {
+    width: 50%;
+  }
+  .galeria-fotos .galeria-1 .galeria-1__1 img,
+  .galeria-fotos .galeria-1 .galeria-1__2 img,
+  .galeria-fotos .galeria-1 .galeria-1__3 img,
+  .galeria-fotos .galeria-1 .galeria-1__4 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria-fotos .galeria-2 {
+    width: 41.66667%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0%;
+  }
+  .galeria-fotos .galeria-2 .gall-5 {
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+    position: relative;
+    right: 3%;
+  }
+  .galeria-fotos .galeria-3 {
+    width: 16.66667%;
+    position: relative;
+    right: 2%;
+  }
+  .galeria-fotos .galeria-3 .columna-galeria-3 {
+    height: 90%;
+    width: 144%;
+    margin-top: 20px;
+  }
+  .galeria-fotos .galeria-3 .gall-6,
+  .galeria-fotos .galeria-3 .gall-7 {
+    max-width: 100%;
+    height: auto;
+  }
+  .aliados-logos .contenedor-logos {
+    width: 100%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados {
+    right: 7%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .h5-aliados {
+    left: 6%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .p-aliados {
+    left: 5%;
+    font-size: 80px;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .linea-vertical {
+    right: 115%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados .img-tena {
+    left: -11%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados .img-logo-univ {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navbar .navbar-nav .caja-icono-nav {
+    left: 0%;
+  }
   .encabezado-pt1 {
     height: 450px !important;
   }
-  .encabezado-pt1 .cajon-encabezado, .encabezado-pt1 .cajon-encabezado2 {
+  .encabezado-pt1 .cajon-encabezado,
+  .encabezado-pt1 .cajon-encabezado2 {
     height: 450px;
   }
   .encabezado-pt1 .cajon-encabezado .btn {
@@ -12952,12 +13128,26 @@ header {
     left: 11%;
   }
   .servicios-integrales {
-    height: 300px;
+    height: 200px;
+  }
+  .servicios-integrales .container-integral {
+    height: 200px;
   }
   .servicios-integrales .rectangulo {
-    height: 300px;
-    min-width: 700px;
-    max-width: 767px;
+    height: 160px;
+    width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 22px 20px;
+    -webkit-box-shadow: 7px 6px 8px 0.3px rgba(0, 0, 0, 0.3);
+            box-shadow: 7px 6px 8px 0.3px rgba(0, 0, 0, 0.3);
+  }
+  .servicios-integrales .rectangulo .col-md-6 {
+    width: 80%;
   }
   .servicios-residenciales .row {
     height: 600px;
@@ -12980,12 +13170,12 @@ header {
     width: 45%;
   }
   .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
-    left: 3%;
-    width: 115%;
+    left: 0%;
+    width: 107%;
   }
   .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .servicio-img-3 {
-    width: 100%;
-    right: 0%;
+    width: 95%;
+    left: 2%;
   }
   .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas {
     width: 76%;
@@ -12995,13 +13185,438 @@ header {
   .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas .btn-residencial {
     width: 43%;
   }
+  .servicios-adicionales .adicionales-pt1 {
+    left: 4%;
+  }
   .servicios-adicionales .adicionales-pt1 .adicionales-pt1__1 {
     width: 65%;
+    position: relative;
+    left: 23%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 {
+    top: 5.5%;
+    left: 13%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .servicios-residencia .caja-centro {
+    top: 7%;
+    width: 54%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .conocer-mas-2 {
+    width: 82%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .conocer-mas-2 .btn-adicionales {
+    width: 60%;
   }
   .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .img-adicionales {
     width: 100%;
   }
   .servicios-adicionales .adicionales-pt2 {
     overflow: visible;
+  }
+  .servicios-adicionales .adicionales-pt2 .hoja-right {
+    left: 14%;
+  }
+  .seccion-blanca-2 {
+    display: none;
+  }
+  .seccion-diezaños {
+    width: 100%;
+  }
+  .seccion-diezaños .diezañospt2 .caja-diezaños {
+    padding-top: 0px;
+    top: 7%;
+  }
+  .seccion-diezaños .diezañospt2 .vermas-diezaños {
+    bottom: 12%;
+  }
+  .seccion-diezaños .diezañospt2 .btn-diezaños {
+    width: 54%;
+    position: relative;
+    left: -1%;
+  }
+  .seccion-diezaños .diezañospt1 {
+    right: 8%;
+    padding-top: 0px;
+    padding-top: 25px;
+  }
+  .seccion-diezaños .diezañospt1 .diezaños-img {
+    width: 100%;
+    height: auto;
+  }
+  .galeria-fotos {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .galeria-fotos .columna-galeria {
+    width: 100%;
+  }
+  .galeria-fotos .galeria-1 {
+    width: 41.66667%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    padding: 9px;
+  }
+  .galeria-fotos .galeria-1 .gall-1,
+  .galeria-fotos .galeria-1 .gall-2 {
+    width: 100%;
+  }
+  .galeria-fotos .galeria-1 .gall-3,
+  .galeria-fotos .galeria-1 .gall-4 {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria-fotos .galeria-1 .galeria-1__1,
+  .galeria-fotos .galeria-1 .galeria-1__2,
+  .galeria-fotos .galeria-1 .galeria-1__3,
+  .galeria-fotos .galeria-1 .galeria-1__4 {
+    width: 50%;
+  }
+  .galeria-fotos .galeria-1 .galeria-1__1 img,
+  .galeria-fotos .galeria-1 .galeria-1__2 img,
+  .galeria-fotos .galeria-1 .galeria-1__3 img,
+  .galeria-fotos .galeria-1 .galeria-1__4 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria-fotos .galeria-2 {
+    width: 41.66667%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0%;
+  }
+  .galeria-fotos .galeria-2 .gall-5 {
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+    position: relative;
+    right: 3%;
+  }
+  .galeria-fotos .galeria-3 {
+    width: 16.66667%;
+    position: relative;
+    right: 2%;
+  }
+  .galeria-fotos .galeria-3 .columna-galeria-3 {
+    height: 90%;
+    width: 144%;
+  }
+  .galeria-fotos .galeria-3 .columna-galeria-3 .galeria-3__1,
+  .galeria-fotos .galeria-3 .columna-galeria-3 .galeria-3__2 {
+    width: 100%;
+  }
+  .galeria-fotos .galeria-3 .gall-6,
+  .galeria-fotos .galeria-3 .gall-7 {
+    max-width: 100%;
+    height: auto;
+  }
+  .contenedor-ver-todos .btn-ver-todos {
+    width: 19%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .p-aliados {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
+    left: 0%;
+    width: 102% !important;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .servicio-img-3 {
+    width: 95%;
+    left: 2%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas {
+    width: 76%;
+    position: relative;
+    left: 12%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas .btn-residencial {
+    width: 43%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 959px) {
+  .aliados-logos .contenedor-logos {
+    height: 270px;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .p-aliados {
+    font-size: 60px;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados {
+    height: 270px;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados .img-tena {
+    left: 1%;
+    top: 10%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados .img-logo-univ {
+    left: 1%;
+    top: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .encabezado-pt1 {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .encabezado-pt1 .contenedor-encabezado {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .servicios-integrales .rectangulo {
+    max-width: 500px;
+    height: 160px;
+    width: 500px;
+    position: relative;
+    margin-top: -64px;
+  }
+  .servicios-integrales .rectangulo .rectangulo-2 .h2-integral {
+    font-size: 27px;
+  }
+  .servicios-integrales .rectangulo .rectangulo-2 .p-integral {
+    font-size: 25px;
+  }
+  .servicios-integrales .rectangulo .rectangulo-3 .vineta-left2 {
+    padding-left: 0px;
+  }
+  .servicios-residenciales .residenciales-pt1 {
+    display: none;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__2 .servicios-residencia {
+    width: 55%;
+    padding-top: 0%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__2 .servicios-residencia p {
+    font-size: 15px;
+  }
+  .seccion-blanca {
+    display: none;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 {
+    top: 3.5%;
+    left: 14%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .servicios-residencia .caja-centro {
+    top: 10%;
+    width: 59%;
+    right: 60%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .caja-verde-claro {
+    width: 37%;
+    height: 118%;
+    position: relative;
+    right: 6%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 {
+    bottom: 37%;
+    right: -0.8%;
+    width: 81%;
+  }
+  .servicios-adicionales .adicionales-pt2 {
+    display: none;
+  }
+  .container-diezaños .seccion-diezaños {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .container-diezaños .seccion-diezaños .diezañospt1 {
+    right: -2%;
+  }
+  .container-diezaños .seccion-diezaños .diezañospt2 .btn-diezaños {
+    position: relative;
+    left: 25%;
+  }
+  .galeria-fotos .columna-galeria .galeria-1,
+  .galeria-fotos .columna-galeria .galeria-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeria-fotos .columna-galeria .galeria-1 .gall-3,
+  .galeria-fotos .columna-galeria .galeria-1 .gall-4 {
+    width: 100%;
+    height: auto;
+  }
+  .galeria-fotos .columna-galeria .galeria-2 .gall-5 {
+    padding: 35px;
+    position: relative;
+    right: 0%;
+  }
+  .galeria-fotos .columna-galeria .galeria-3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeria-fotos .columna-galeria .galeria-3 .columna-galeria-3 {
+    width: 100%;
+  }
+  .galeria-fotos .columna-galeria .galeria-3 .columna-galeria-3 .galeria-3__1 {
+    width: 50%;
+  }
+  .galeria-fotos .columna-galeria .galeria-3 .columna-galeria-3 .galeria-3__2 {
+    width: 50%;
+  }
+  .contenedor-ver-todos .btn-ver-todos {
+    width: 50%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados {
+    right: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .p-aliados {
+    position: inherit;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 .cajon-aliados .h5-aliados {
+    position: inherit;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .linea-vertical {
+    display: none;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cajon-grupo-sura .columna-grupo-sura .cajon-vigilado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .servicios-integrales .container-integral .rectangulo {
+    width: 100%;
+    height: 230px;
+  }
+  .servicios-integrales .container-integral .rectangulo .rectangulo-1, .servicios-integrales .container-integral .rectangulo .rectangulo-3 {
+    width: 20%;
+  }
+  .servicios-integrales .container-integral .rectangulo .rectangulo-2 {
+    width: 60%;
+  }
+  .servicios-integrales .container-integral .rectangulo .rectangulo-2 .servicios-integrales-info .p-integral {
+    font-size: 16px;
+  }
+  .servicios-integrales .container-integral .rectangulo .rectangulo-2 .servicios-integrales-info .h2-integral {
+    font-size: 18px;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
+    bottom: 45%;
+  }
+  .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 .conocer-mas .btn-residencial {
+    width: 70%;
+  }
+  .servicios-adicionales .row {
+    height: 600px;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .caja-verde-claro {
+    height: 89%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .conocer-mas-2 .btn-adicionales {
+    width: 75%;
+  }
+  .contenedor-sqn-info {
+    display: none;
+  }
+  .seccion-diezaños .diezañospt2 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .aliados-logos {
+    height: 350px;
+  }
+  .aliados-logos .contenedor-logos {
+    height: 100%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt1 {
+    height: 50%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 {
+    height: 50%;
+  }
+  .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados {
+    display: block;
+    text-align: center;
+  }
+  .cajon-grupo-sura {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .cajon-grupo-sura .columna-grupo-sura .cajon-filial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

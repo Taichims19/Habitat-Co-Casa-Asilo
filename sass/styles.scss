@@ -4,13 +4,11 @@ header {
   height: 25px;
 }
 .navbar {
- 
   width: 100%;
 }
 
 .navbar .container-fluid {
   width: 100%;
-  
 
   .collapse {
     width: 100%;
@@ -59,8 +57,7 @@ header {
   height: 670px !important;
   width: 100%;
   .container-fluid {
-    // height: 670px !important;
-    height:max-content;
+    height: max-content;
   }
 }
 //cols
@@ -74,7 +71,6 @@ header {
 }
 .img-suramerica {
   object-fit: cover;
-  
 }
 .cajon-encabezado {
   position: relative;
@@ -131,14 +127,17 @@ header {
 
 //seccion media
 .servicios-integrales {
-  height:max-content;
+  height: max-content;
   .container-fluid {
     max-width: 1100px;
     min-height: 245px;
     padding: 20px;
     position: relative;
   }
-
+  .container-integral {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .rectangulo {
     max-width: 1100px;
     width: 950px;
@@ -171,7 +170,7 @@ header {
 
 //servicios residenciales
 .servicios-residenciales {
-  position:relative;
+  position: relative;
   .row {
     height: 800px;
   }
@@ -179,7 +178,7 @@ header {
     display: flex;
     justify-content: end;
     align-items: start;
-    position:relative;
+    position: relative;
     .hoja-left {
       width: 224px;
       height: 169px;
@@ -193,7 +192,7 @@ header {
 
     .residenciales-pt2__1 {
       height: 110px;
-      position:relative;
+      position: relative;
       h3 {
         font-size: 32px;
         color: color(letras-grises);
@@ -514,12 +513,29 @@ header {
   height: 480px;
   .galeria-1 {
     position: relative;
+    width: 41.66666667%;
     right: 0;
     padding: 0px 0px;
+
+    .galeria-1__1,
+    .galeria-1__2,
+    .galeria-1__3,
+    .galeria-1__4 {
+      width: 50%;
+    }
     .galeria-1__ajuste1,
     .galeria-1__ajuste2 {
       padding: 0px 0px;
       width: 260px;
+    }
+    .gall-1,
+    .gall-2 {
+      width: 100%;
+    }
+    .gall-3,
+    .gall-4 {
+      max-width: 100%;
+      height: auto;
     }
 
     .galeria-1__ajuste2 img {
@@ -532,10 +548,13 @@ header {
   .galeria-2 {
     position: relative;
     right: 1.5%;
+    width: auto;
+    padding: 0.25rem;
   }
   .galeria-3 {
     position: relative;
     right: 1.5%;
+    width: 16.66667%;
   }
 }
 //seccion Titulo noticias
@@ -558,6 +577,27 @@ header {
       overflow: hidden;
       border-radius: 0px;
     }
+  }
+}
+.caja-2min {
+  img {
+    opacity: 0.8;
+  }
+  .card-img-overlay {
+    position: absolute;
+    top: 34%;
+    left: 5%;
+    display: inline-block;
+  }
+  h5 {
+    border: 1px solid color(verde-oscuro);
+    background-color: color(letra-botones);
+    padding: 2px;
+    color: #fff;
+    display: inline-block;
+  }
+  small {
+    font-size: 16px;
   }
 }
 .caja-card-noticias {
@@ -587,7 +627,7 @@ header {
   }
   p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -668,17 +708,156 @@ header {
 }
 //grupo-sura
 .cajon-grupo-sura {
-  height: 110px;
+  height: 130px;
 
   .columna-grupo-sura {
     width: 100%;
+    .cajon-filial {
+      display:flex;
+      justify-content:end;
+    }
   }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
+
+
+
+
+
+@media only screen and (max-width: 1320px) {
+  .servicios-residenciales {
+    .residenciales-pt2 {
+      .residenciales-pt2__3 {
+        left: 0%;
+        width: 102%;
+
+        .servicio-img-3 {
+          width: 95%;
+          left: 2%;
+        }
+        .conocer-mas {
+          position: relative;
+          right: -10%;
+          width: 77%;
+          .btn-residencial {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  .servicios-adicionales {
+    .adicionales-pt2 {
+      overflow: visible;
+      .hoja-right {
+        left: 5%;
+      }
+    }
+  }
+  .galeria-fotos {
+    width: 100%;
+    height: max-content;
+    .columna-galeria {
+      width: 100%;
+    }
+    .galeria-1 {
+      width: 41.66667%;
+      height: max-content;
+      position: relative;
+      padding: 9px;
+      .gall-1,
+      .gall-2 {
+        width: 100%;
+      }
+      .gall-3,
+      .gall-4 {
+        max-width: 100%;
+        height: auto;
+      }
+      .galeria-1__1,
+      .galeria-1__2,
+      .galeria-1__3,
+      .galeria-1__4 {
+        width: 50%;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .galeria-2 {
+      width: 41.66667%;
+      height: max-content;
+      display: flex;
+      right: 0%;
+      .gall-5 {
+        max-width: 100%;
+        height: auto;
+        padding: 16px;
+        position: relative;
+        right: 3%;
+      }
+    }
+    .galeria-3 {
+      width: 16.66667%;
+      position: relative;
+      right: 2%;
+      .columna-galeria-3 {
+        height: 90%;
+        width: 144%;
+        margin-top: 20px;
+      }
+      .gall-6,
+      .gall-7 {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .aliados-logos {
+    .contenedor-logos {
+      width: 100%;
+      .logos-pt1 {
+        .cajon-aliados {
+          right: 7%;
+          .h5-aliados {
+            left: 6%;
+          }
+          .p-aliados {
+            left: 5%;
+            font-size: 80px;
+          }
+        }
+      }
+      .logos-pt2 {
+        .linea-vertical {
+          right: 115%;
+        }
+        .imagenes-aliados {
+          .img-tena {
+            left: -11%;
+          }
+          .img-logo-univ {
+            left: 0%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    .navbar-nav {
+      .caja-icono-nav {
+        left: 0%;
+      }
+    }
+  }
   .encabezado-pt1 {
-    height: 450px!important;
-    .cajon-encabezado, .cajon-encabezado2 {
+    height: 450px !important;
+    .cajon-encabezado,
+    .cajon-encabezado2 {
       height: 450px;
     }
     .cajon-encabezado {
@@ -690,11 +869,20 @@ header {
     }
   }
   .servicios-integrales {
-    height: 300px;
+    height: 200px;
+    .container-integral {
+      height: 200px;
+    }
     .rectangulo {
-      height: 300px;
-      min-width:700px;
-      max-width:767px;
+      height: 160px;
+      width: 700px;
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 20px;
+      box-shadow: 7px 6px 8px 0.3px rgba(0, 0, 0, 0.3);
+      .col-md-6 {
+        width: 80%;
+      }
     }
   }
   .servicios-residenciales {
@@ -714,16 +902,16 @@ header {
       }
       .residenciales-pt2__2 {
         .servicios-residencia {
-          width:45%;
+          width: 45%;
         }
       }
       .residenciales-pt2__3 {
-        left: 3%;
-        width: 115%;
-        
+        left: 0%;
+        width: 107%;
+
         .servicio-img-3 {
-          width:100%;
-          right: 0%;
+          width: 95%;
+          left: 2%;
         }
         .conocer-mas {
           width: 76%;
@@ -738,18 +926,481 @@ header {
   }
   .servicios-adicionales {
     .adicionales-pt1 {
+      left: 4%;
       .adicionales-pt1__1 {
-        
         width: 65%;
+        position: relative;
+        left: 23%;
+      }
+      .adicionales-pt1__2 {
+        top: 5.5%;
+        left: 13%;
+        .servicios-residencia {
+          .caja-centro {
+            top: 7%;
+            width: 54%;
+          }
+        }
       }
       .adicionales-pt1__3 {
+        .conocer-mas-2 {
+          width: 82%;
+          .btn-adicionales {
+            width: 60%;
+          }
+        }
         .img-adicionales {
-          width:100%;
+          width: 100%;
         }
       }
     }
     .adicionales-pt2 {
       overflow: visible;
+      .hoja-right {
+        left: 14%;
+      }
+    }
+  }
+  .seccion-blanca-2 {
+    display: none;
+  }
+  .seccion-diezaños {
+    width: 100%;
+    .diezañospt2 {
+      .caja-diezaños {
+        padding-top: 0px;
+        top: 7%;
+      }
+      .vermas-diezaños {
+        bottom: 12%;
+      }
+      .btn-diezaños {
+        width: 54%;
+        position: relative;
+        left: -1%;
+      }
+    }
+    .diezañospt1 {
+      right: 8%;
+      padding-top: 0px;
+      padding-top: 25px;
+      .diezaños-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .galeria-fotos {
+    width: 100%;
+    height: max-content;
+    .columna-galeria {
+      width: 100%;
+    }
+    .galeria-1 {
+      width: 41.66667%;
+      height: max-content;
+      position: relative;
+      padding: 9px;
+      .gall-1,
+      .gall-2 {
+        width: 100%;
+      }
+      .gall-3,
+      .gall-4 {
+        max-width: 100%;
+        height: auto;
+      }
+      .galeria-1__1,
+      .galeria-1__2,
+      .galeria-1__3,
+      .galeria-1__4 {
+        width: 50%;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .galeria-2 {
+      width: 41.66667%;
+      height: max-content;
+      display: flex;
+      right: 0%;
+      .gall-5 {
+        max-width: 100%;
+        height: auto;
+        padding: 16px;
+        position: relative;
+        right: 3%;
+      }
+    }
+    .galeria-3 {
+      width: 16.66667%;
+      position: relative;
+      right: 2%;
+      .columna-galeria-3 {
+        height: 90%;
+        width: 144%;
+        .galeria-3__1,
+        .galeria-3__2 {
+          width: 100%;
+        }
+      }
+      .gall-6,
+      .gall-7 {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .contenedor-ver-todos {
+    .btn-ver-todos {
+      width: 19%;
+    }
+  }
+  .aliados-logos {
+    .contenedor-logos {
+      .logos-pt1 {
+        .cajon-aliados {
+          .h5-aliados {
+          }
+          .p-aliados {
+            font-size: 60px;
+          }
+        }
+      }
+      .logos-pt2 {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .servicios-residenciales {
+    .residenciales-pt2 {
+      .residenciales-pt2__3 {
+        left: 0%;
+        width: 102% !important;
+
+        .servicio-img-3 {
+          width: 95%;
+          left: 2%;
+        }
+        .conocer-mas {
+          width: 76%;
+          position: relative;
+          left: 12%;
+          .btn-residencial {
+            width: 43%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 959px) {
+  .aliados-logos {
+    .contenedor-logos {
+      height: 270px;
+      .logos-pt1 {
+        .cajon-aliados {
+          .h5-aliados {
+          }
+          .p-aliados {
+            font-size: 60px;
+          }
+        }
+      }
+      .logos-pt2 {
+        .imagenes-aliados {
+          height: 270px;
+          .img-tena {
+            left: 1%;
+            top: 10%;
+          }
+          .img-logo-univ {
+            left: 1%;
+            top: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .encabezado-pt1 {
+    height: max-content !important;
+    .contenedor-encabezado {
+      height: max-content;
+    }
+  }
+  .servicios-integrales {
+    .rectangulo {
+      max-width: 500px;
+      height: 160px;
+      width: 500px;
+      position: relative;
+      margin-top: -64px;
+      .rectangulo-2 {
+        .h2-integral {
+          font-size: 27px;
+        }
+        .p-integral {
+          font-size: 25px;
+        }
+      }
+      .rectangulo-3 {
+        .vineta-left2 {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+  .servicios-residenciales {
+    .residenciales-pt1 {
+      display: none;
+    }
+    .residenciales-pt2 {
+      .residenciales-pt2__2 {
+        .servicios-residencia {
+          width: 55%;
+          padding-top: 0%;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .seccion-blanca {
+    display: none;
+  }
+  .servicios-adicionales {
+    .adicionales-pt1 {
+      .adicionales-pt1__2 {
+        top: 3.5%;
+        left: 14%;
+        .servicios-residencia {
+          .caja-centro {
+            top: 10%;
+            width: 59%;
+            right: 60%;
+          }
+        }
+        .caja-verde-claro {
+          width: 37%;
+          height: 118%;
+          position: relative;
+          right: 6%;
+        }
+      }
+
+      .adicionales-pt1__3 {
+        bottom: 37%;
+        right: -0.8%;
+        width: 81%;
+      }
+    }
+    .adicionales-pt2 {
+      display: none;
+    }
+  }
+  .container-diezaños {
+    .seccion-diezaños {
+      height: max-content;
+      .diezañospt1 {
+        right: -2%;
+      }
+      .diezañospt2 {
+        .btn-diezaños {
+          position: relative;
+          left: 25%;
+        }
+      }
+    }
+  }
+  .galeria-fotos {
+    .columna-galeria {
+      .galeria-1,
+      .galeria-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .galeria-1 {
+        .gall-3,
+        .gall-4 {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .galeria-2 {
+        .gall-5 {
+          padding: 35px;
+          position: relative;
+          right: 0%;
+        }
+      }
+      .galeria-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .columna-galeria-3 {
+          width: 100%;
+          .galeria-3__1 {
+            width: 50%;
+          }
+          .galeria-3__2 {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .contenedor-ver-todos {
+    .btn-ver-todos {
+      width: 50%;
+    }
+  }
+  .aliados-logos {
+    .contenedor-logos {
+      .logos-pt1 {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cajon-aliados {
+          right: 0%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          .p-aliados {
+            position: inherit;
+          }
+          .h5-aliados {
+            position: inherit;
+          }
+        }
+      }
+      .logos-pt2 {
+        height: max-content;
+        display: flex;
+        justify-content:center;
+        .linea-vertical {
+          display: none;
+        }
+        .imagenes-aliados {
+          display: flex;
+          width:90%;
+          justify-content: center;
+          
+        }
+      }
+    }
+  }
+  .cajon-grupo-sura {
+    .columna-grupo-sura {
+      .cajon-vigilado {
+        display:flex;
+        justify-content:center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .servicios-integrales {
+    .container-integral {
+      .rectangulo {
+        width:100%;
+        height: 230px;
+        .rectangulo-1 , .rectangulo-3 {
+          width:20%;
+        }
+        .rectangulo-2 {
+          width:60%;
+          .servicios-integrales-info {
+            .p-integral {
+              font-size:16px;
+            }
+            .h2-integral {
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .servicios-residenciales {
+    .residenciales-pt2 {
+      .residenciales-pt2__1 {
+        justify-content: flex-start;
+      }
+      .residenciales-pt2__3 {
+        bottom: 45%;
+        .conocer-mas {
+          .btn-residencial {
+            width:70%;
+          }
+        }
+      }
+    }
+  }
+  .servicios-adicionales {
+    .row {
+      height: 600px;
+    }
+    .adicionales-pt1 {
+      .adicionales-pt1__2 {
+        .caja-verde-claro {
+          height: 89%;
+        }
+      }
+      .adicionales-pt1__3 {
+        .conocer-mas-2 {
+          .btn-adicionales {
+            width:75%;
+          }
+        }
+      }
+    }
+  }
+  .contenedor-sqn-info {
+    display:none;
+  }
+  .seccion-diezaños {
+    .diezañospt2 {
+      height:max-content;
+    }
+  }
+  .aliados-logos {
+    height:350px;
+    .contenedor-logos {
+      height:100%;
+      .logos-pt1 {
+        height:50%;
+      }
+      .logos-pt2 {
+        height:50%;
+        
+        .imagenes-aliados {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .cajon-grupo-sura {
+    height:max-content;
+    .columna-grupo-sura {
+      .cajon-filial {
+        display:flex;
+        justify-content: center;
+      }
     }
   }
 }
