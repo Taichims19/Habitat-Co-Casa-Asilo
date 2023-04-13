@@ -62,12 +62,14 @@ $colors: (
   gris-claro: #cdcdcd,
   success: #00cb30,
   letra-botones:#81B47C,
+  cajon-info-footer:#19766C,
   
 );
 
 /*patron colores*/
 $principal: color(verde-claro);
 $secondary: color(verde-oscuro);
+$info: color(cajon-info-footer);
 
 /*Modificando variables de bootstrap*/
 $primary: $principal;
@@ -91,45 +93,3 @@ $btn-border-radius:20px;
   @return url("../img/#{$img}");
 }
 
-// .aliados-logos {
-//   height: 400px;
-//  .contenedor-logos {
-//     height: 400px;
-//    .logos-pt1 {
-//       height: 200px;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content:center;
-//       align-items: center;
-//        .cajon-aliados {
-//        right: 0%;
-//        display: flex;
-//        flex-direction:column;
-//        justify-content: center;
-//        text-align: center;
-//        .p-aliados {
-//          position: inherit;
-//        }
-//        .h5-aliados {
-//          position:inherit;
-//        }
-//        }
-//    }
-//    .logos-pt2 {
-//      height: 200px;
-//      display:flex;
-//      flex-direction:column;
-//      .linea-vertical {
-//        display:none;
-//      }
-//      .imagenes-aliados {
-//        display: flex;
-//        flex-direction:column;
-//        .img-tena , .img-logo-univ {
-//          height:100px;
-//          width:auto;
-//        }
-//      }
-//    }
-//  }
-// }

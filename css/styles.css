@@ -12994,6 +12994,14 @@ header {
           justify-content: end;
 }
 
+.contactanos {
+  background-image: url(../img/contacto.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  height: 667px;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1320px) {
   .servicios-residenciales .residenciales-pt2 .residenciales-pt2__3 {
     left: 0%;
