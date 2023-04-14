@@ -12241,8 +12241,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header {
+.header-verde {
   height: 25px;
+  position: relative;
 }
 
 .navbar {
@@ -12288,6 +12289,35 @@ header {
 .navbar-nav .caja-icono-nav {
   position: relative;
   left: 7%;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 158%;
+  left: -155%;
+  width: 519px;
+  height: 200px;
+}
+.navbar-nav .dropdown-menu .dropmenu1,
+.navbar-nav .dropdown-menu .dropmenu2 {
+  width: 50%;
+  height: 100%;
+}
+.navbar-nav .dropdown-menu .hijo-menu-1, .navbar-nav .dropdown-menu .hijo-menu-2 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-nav .dropdown-menu .hijo-menu-1 img, .navbar-nav .dropdown-menu .hijo-menu-2 img {
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar-brand img {
@@ -13098,7 +13128,8 @@ header {
   top: 4%;
   left: 42%;
 }
-.contactanos .columna-contactanos .cajon-formulario input.form-control:focus + span.obligatorio, .contactanos .columna-contactanos .cajon-formulario textarea.form-control:focus + span.obligatorio5 {
+.contactanos .columna-contactanos .cajon-formulario input.form-control:focus + span.obligatorio,
+.contactanos .columna-contactanos .cajon-formulario textarea.form-control:focus + span.obligatorio5 {
   display: none;
 }
 .contactanos .columna-contactanos .cajon-formulario input.form-control:focus + span.obligatorio1 {
@@ -13353,6 +13384,26 @@ header {
   .aliados-logos .contenedor-logos .logos-pt2 .imagenes-aliados .img-logo-univ {
     left: 0%;
   }
+  .contactanos .columna-contactanos .cajon-img-contacto1 .contacto-1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio2 {
+    top: 23%;
+    left: 55%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio1 {
+    top: 26%;
+    left: 44%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio {
+    top: 25%;
+    left: 56%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio5 {
+    top: 6%;
+    left: 45%;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .navbar .navbar-nav .caja-icono-nav {
@@ -13603,6 +13654,23 @@ header {
     left: 1%;
     top: 20%;
   }
+  .info-contactos .container-info-contactos .info-contacto3, .info-contactos .container-info-contactos .info-contacto2, .info-contactos .container-info-contactos .info-contacto1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio1 {
+    left: 50%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio2 {
+    left: 63%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio {
+    left: 64%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio5 {
+    left: 50%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .encabezado-pt1 {
@@ -13778,6 +13846,17 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contactanos {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .contactanos .columna-contactanos .cajon-img-contacto1 {
+    width: 100%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario {
+    width: 100%;
   }
   .cajon-grupo-sura .columna-grupo-sura .cajon-vigilado {
     display: -webkit-box;
