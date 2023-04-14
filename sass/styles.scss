@@ -50,6 +50,7 @@ header {
   position: relative;
   right: -10%;
 }
+
 //seccion encabezado
 //cajones padres
 .encabezado-pt1 {
@@ -709,25 +710,237 @@ header {
 //grupo-sura
 .cajon-grupo-sura {
   height: 130px;
+  background-color: #efefef;
 
   .columna-grupo-sura {
     width: 100%;
     .cajon-filial {
-      display:flex;
-      justify-content:end;
+      display: flex;
+      justify-content: end;
+      position: relative;
+      left: 5%;
+    }
+    .cajon-vigilado {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      position: relative;
+      right: 6%;
     }
   }
 }
 
-//seccion contactanos 
+//seccion contactanos
 .contactanos {
-  
   background-image: url(../img/contacto.jpg);
   background-size: 100% 100%;
   position: relative;
   height: 667px;
   background-repeat: no-repeat;
-  
+  display: flex;
+  justify-content: center;
+  .columna-contactanos {
+    width: 89%;
+
+    .cajon-img-contacto1 {
+      width: 38.333333%;
+      position: relative;
+      left: 2%;
+      .contacto-1 {
+        position: relative;
+        bottom: 12%;
+      }
+    }
+    .cajon-formulario {
+      background-color: #ffffff;
+      padding: 52px;
+      width: 61.666666%;
+      height: 86%;
+      position: relative;
+      top: 6%;
+      right: 0%;
+
+      .form-check-label {
+        color:#afafaf;
+      }
+      .input-container {
+        position: relative;
+      }
+
+      input.form-control::placeholder {
+        color: #afafaf;
+        
+      }
+      input.form-control {
+        color: #afafaf;
+        border-radius: 150px;
+      }
+
+      span.obligatorio,
+      span.obligatorio1,
+      span.obligatorio2,
+      span.obligatorio5 {
+        color: green;
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        font-size: 13px;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        right: 10px;
+        display: inline-block;
+      }
+      span.obligatorio1 {
+        top: 17%;
+        left: 42%;
+      }
+      span.obligatorio2 {
+        top: 22%;
+        left: 49%;
+      }
+      span.obligatorio5 {
+        top: 4%;
+        left: 42%;
+      }
+      
+
+      input.form-control:focus + span.obligatorio, textarea.form-control:focus + span.obligatorio5 {
+        display: none;
+      }
+      input.form-control:focus + span.obligatorio1 {
+        display: none;
+      }
+      input.form-control:focus + span.obligatorio2 {
+        display: none;
+      }
+      
+      .btn-secondary {
+        height: 70%;
+        width: 150%;
+        font-size: 21px;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+        left: 10%;
+      }
+    }
+  }
+}
+
+//Seccion Cajon Informacion de Contacto
+
+.info-contactos {
+ 
+  display: flex;
+  align-items: center;
+  .container-info-contactos {
+    .info-contacto1 {
+      align-items: center;
+      justify-content: flex-start;
+      padding:10px;
+      .footerpt1 {
+        padding: 22px 0px;
+        color: #fff;
+        line-height: 4px;
+        hr {
+          width:80%;
+        }
+        p {
+          letter-spacing:2px;
+        }
+      }
+    }
+    .info-contacto2 {
+      align-items: center;
+      justify-content: flex-start;
+      padding:10px;
+      .footerpt2 {
+        padding: 22px 0px;
+        letter-spacing:2px;
+        color: #fff;
+        line-height: 18px;
+        font-weight: 100;
+      }
+    }
+    .info-contacto3 {
+      align-items: center;
+      .footerpt3 {
+        padding: 22px 0px;
+        letter-spacing:2px;
+        color: #fff;
+        line-height: 18px;
+        font-weight: 100;
+        .p-footerpt3 {
+          border: 1px solid #ffffff;
+          letter-spacing: 2px;
+          color: #fff;
+          line-height: 26px;
+          padding: 2px 9px;
+        }
+        .caja-iconos-footer {
+          .caja-icono-nav {
+          position: relative;
+          left: 0%;
+          }
+          ul {
+            padding-left: 0rem;
+          }
+          .active {
+            color: color(verde-claro) !important;
+          }
+          a {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 2px 2px;
+            color: color(titulos-verde);
+          }
+          a:hover {
+            color: color(verde-claro);
+            border-bottom: 5px dotted color(verde-claro);
+          }
+          a i {
+            font-size: 24px;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            padding: 0px 5px;
+            color: #fff;
+            margin-right: 13px;
+          }
+        
+        }
+      }
+    }
+  }
+}
+
+.muva {
+  .container-muva {
+    .info-muva {
+      .p-muva {
+        font-size: 11px;
+        position: relative;
+        top: 26%;
+        right: 1%;
+      }
+      .cajon-footer {
+        hr.bg-white {
+          width: 0%;
+          height: 63%;
+          border: 1px solid #fff;
+          position: relative;
+          left: 10%;
+          bottom: 25%;
+        }
+        .ico-desarrollo {
+          position:relative;
+          top:17%;
+          left: 20%;
+        }
+      }
+    }
+  }
 }
 
 
@@ -1298,15 +1511,14 @@ header {
       .logos-pt2 {
         height: max-content;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         .linea-vertical {
           display: none;
         }
         .imagenes-aliados {
           display: flex;
-          width:90%;
+          width: 90%;
           justify-content: center;
-          
         }
       }
     }
@@ -1314,8 +1526,8 @@ header {
   .cajon-grupo-sura {
     .columna-grupo-sura {
       .cajon-vigilado {
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
       }
     }
   }
@@ -1325,19 +1537,20 @@ header {
   .servicios-integrales {
     .container-integral {
       .rectangulo {
-        width:100%;
+        width: 100%;
         height: 230px;
-        .rectangulo-1 , .rectangulo-3 {
-          width:20%;
+        .rectangulo-1,
+        .rectangulo-3 {
+          width: 20%;
         }
         .rectangulo-2 {
-          width:60%;
+          width: 60%;
           .servicios-integrales-info {
             .p-integral {
-              font-size:16px;
+              font-size: 16px;
             }
             .h2-integral {
-              font-size:18px;
+              font-size: 18px;
             }
           }
         }
@@ -1353,7 +1566,7 @@ header {
         bottom: 45%;
         .conocer-mas {
           .btn-residencial {
-            width:70%;
+            width: 70%;
           }
         }
       }
@@ -1372,30 +1585,30 @@ header {
       .adicionales-pt1__3 {
         .conocer-mas-2 {
           .btn-adicionales {
-            width:75%;
+            width: 75%;
           }
         }
       }
     }
   }
   .contenedor-sqn-info {
-    display:none;
+    display: none;
   }
   .seccion-diezaños {
     .diezañospt2 {
-      height:max-content;
+      height: max-content;
     }
   }
   .aliados-logos {
-    height:350px;
+    height: 350px;
     .contenedor-logos {
-      height:100%;
+      height: 100%;
       .logos-pt1 {
-        height:50%;
+        height: 50%;
       }
       .logos-pt2 {
-        height:50%;
-        
+        height: 50%;
+
         .imagenes-aliados {
           display: block;
           text-align: center;
@@ -1404,10 +1617,10 @@ header {
     }
   }
   .cajon-grupo-sura {
-    height:max-content;
+    height: max-content;
     .columna-grupo-sura {
       .cajon-filial {
-        display:flex;
+        display: flex;
         justify-content: center;
       }
     }

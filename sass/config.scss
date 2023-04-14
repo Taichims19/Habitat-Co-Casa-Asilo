@@ -5,11 +5,9 @@
 
 //Importar tipografia
 
-
 //importar iconos
 @import url("https://kit.fontawesome.com/36f2e0049f.js");
 //fuentes
-
 
 //guter
 $gutter: 1em;
@@ -30,11 +28,11 @@ $h1-size: $font-size * 1.7;
 
 //z-index variables
 $z-index: (
-    tooltip: 100,
-    modal: 500,
-    overlay: 700,
-    offcanvas: 1000,
-  );
+  tooltip: 100,
+  modal: 500,
+  overlay: 700,
+  offcanvas: 1000,
+);
 
 @function z-index($val) {
   @return map-get($z-index, $val);
@@ -52,32 +50,32 @@ $z-index: (
 }
 
 $colors: (
-  verde-oscuro: #19766C,
-  verde-claro: #C7D684,
+  verde-oscuro: #19766c,
+  verde-claro: #c7d684,
   titulos-verde: #539893,
-  botones-verde: #82B37B,
-  blanco-fondo: #FFFFFF,
+  botones-verde: #82b37b,
+  blanco-fondo: #ffffff,
   footer-negro: #000000,
-  letras-grises: #5D5D5D,
+  letras-grises: #5d5d5d,
   gris-claro: #cdcdcd,
-  success: #00cb30,
-  letra-botones:#81B47C,
-  cajon-info-footer:#19766C,
-  
+  success: #19766c,
+  letra-botones: #81b47c,
+  cajon-info-footer: #00cb30,
 );
 
 /*patron colores*/
 $principal: color(verde-claro);
 $secondary: color(verde-oscuro);
-$info: color(cajon-info-footer);
+$success: color(cajon-info-footer);
+
 
 /*Modificando variables de bootstrap*/
 $primary: $principal;
-$enable-shadows:true;
-$enable-gradients:true;
-$btn-padding-y:  .8rem;
-$btn-padding-x:  2.0rem;
-$btn-border-radius:20px;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 2rem;
+$btn-border-radius: 20px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -86,10 +84,10 @@ $btn-border-radius:20px;
 //@return map-get($colors,$color);
 //} esta tambien sirve
 
-
-
 //funcion para obtener imagenes
 @function img($img) {
   @return url("../img/#{$img}");
 }
+
+
 

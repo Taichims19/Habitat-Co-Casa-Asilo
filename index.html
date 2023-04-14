@@ -350,7 +350,7 @@
     </div>
   </section>
   <!-- Grupo Sura -->
-  <section class="container-fluid cajon-grupo-sura bg-light d-flex justify-content-center align-items-center ">
+  <section class="container-fluid cajon-grupo-sura  d-flex justify-content-center align-items-center ">
     <div class="row columna-grupo-sura">
       <div class="col-12 cajon-filial col-xs-12 col-sm-6 col-md-7 col-lg-7 ">
         <img src="img/filial.png" alt="" srcset="">
@@ -362,84 +362,94 @@
   </section>
   <!-- Seccion Formulario -->
   <section class=" container-fluid contactanos">
-    <div class="container container-contactanos">
-      <div class="row columna-contactanos">
-        <div class="col-12 col-md-5 col-lg-5 cajon-img-contacto1 d-flex align-items-center ">
-          <img src="img/contacto-1.jpg" class="contacto-1" alt="" srcset="">
-        </div>
-        <div class="col-12 col-md-7 col-lg-7 bg-white mt-1 p-5 cajon-formulario">
-          <form class="row g-3">
-            <div class="col-12 col-lg-12">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col-12 col-md-12 col-lg-12 ">
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 ">
-              <input type="tel" class="form-control" id="phone-input" placeholder="Teléfono">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 ">
-              <input type="tel" class="form-control" id="cellphone-input" placeholder="Celular">
-            </div>
-            <div class="col-12 col-md-12 col-lg-12 ">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="7"
-                style="resize: none;"></textarea>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Politica de terminos y condiciones
-              </label>
-            </div>
-            <div class="col-12 col-md-2 col-lg-2 ">
-              <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
-              <label class="btn btn-primary" for="btn-check-2">Checked</label>
-            </div>
-          </form>
+    <div class="row columna-contactanos">
+      <div class="col-12 col-md-4  cajon-img-contacto1 d-flex align-items-center ">
+        <img src="img/contacto-1.jpg" class="contacto-1" alt="" srcset="">
+      </div>
+      <div class="col-12 col-md-8  bg-white mt-1  cajon-formulario">
+        <form class="row g-3">
+          <div class="col-12 col-lg-12 input-container">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            <span class="obligatorio1">(obligatorio*)</span>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12 input-container ">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Correo electrónico"
+              aria-label="Email">
+            <span class="obligatorio2">(obligatorio*)</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 input-container">
+            <input type="tel" class="form-control" id="phone-input" placeholder="Teléfono" aria-label="Phone">
+            <span class="obligatorio">(obligatorio*)</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 input-container">
+            <input type="tel" class="form-control" id="cellphone-input" placeholder="Celular" aria-label="Cellphone">
+            <span class="obligatorio2">(obligatorio*)</span>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12 input-container">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" aria-label="Message"
+              rows="7" style="resize: none;"></textarea>
+            <span class="obligatorio5">(obligatorio*)</span>
+          </div>
 
-        </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Politica de terminos y condiciones
+            </label>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2 ">
+            <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+            <label class="btn btn-secondary" for="btn-check-2">Enviar</label>
+          </div>
+        </form>
+
       </div>
     </div>
+
   </section>
 
-  <section class="container-fluid bg-info info-contactos">
+  <!-- Seccion Informacion de Contacto -->
+
+  <section class="container-fluid bg-secondary info-contactos">
     <div class="container container-info-contactos">
       <div class="row columna-info-contactos">
-        <div class="col-12 col-lg-4 info-contacto1">
-          <img src="img/logo-footer.jpg" class="logo-footer" alt="" srcset="">
-          <div class="footerpt1">
-            <p class="p-footerpt1">Politica Proteccion de Datos</p>
-            <hr class="hr-footerpt1 bg-white">
-            <p class="p-footerpt1">lineaetica@tuhabitat.co</p>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex info-contacto1">
+          <div class="cajon-info1">
+            <img src="img/logo-footer.jpg" class="logo-footer" alt="" srcset="">
+            <div class="footerpt1">
+              <p class="p-footerpt1">Politica Proteccion de Datos</p>
+              <hr class="hr-footerpt1 bg-white">
+              <p class="p-footerpt1"><img src="img/icono-msj.jpg" alt="" srcset=""> lineaetica@tuhabitat.co</p>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 info-contacto2">
+        <div class="col-12 sol-sm-12 col-md-6 col-lg-4 d-flex info-contacto2">
           <div class="footerpt2">
-            <h3 class="h3-footerpt2">CONTÁCTANOS</h3>
-            <p class="p-footerpt2">Teléfono:(57) (4) 322101520</p>
-            <p class="p-footerpt2">Celular:(57) 316 520 03 45</p>
-            <p class="p-footerpt2">comercial@tuhabitat.co</p>
+            <h6 class="h6-footerpt2">CONTÁCTANOS</h6>
+            <p class="p-footerpt2"><img src="img/icono-telf.jpg" alt="" srcset=""> Teléfono:(57) (4) 322101520</p>
+            <p class="p-footerpt2"><img src="img/icono-telf.jpg" alt="" srcset=""> Celular:(57) 316 520 03 45</p>
+            <p class="p-footerpt2"><img src="img/icono-msj.jpg" alt="" srcset=""> comercial@tuhabitat.co</p>
             <p class="p-footerpt2">Medellin - Antioquia, Colombia</p>
           </div>
         </div>
-        <div class="col-12 col-lg-4 info-contacto3">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex info-contacto3">
           <div class="footerpt3">
-            <p class="p-iconos-footer">
-            <ul>
-              <li class="nav-item d-flex caja-icono-nav">
-                <a class="nav-link" href="#contacto-id">
-                  <i class="bi bi-facebook"></i>
-                </a>
-                <a class="nav-link" href="#contacto-id">
-                  <i class="bi bi-instagram"></i>
-                </a>
-                <a class="nav-link" href="#contacto-id">
-                  <i class="bi bi-youtube"></i>
-                </a>
-              </li>
-            </ul>
-            </p>
-            <h3>VISÍTANOS</h3>
+            <div class="caja-iconos-footer">
+              <ul>
+                <li class="nav-item d-flex caja-icono-nav">
+                  <a class="nav-link" href="#contacto-id">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a class="nav-link" href="#contacto-id">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a class="nav-link" href="#contacto-id">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <h6>VISÍTANOS</h6>
             <p class="p-footerpt3">
               De Lunes a Viernes de 9am - 5pm <br>
               Sabados y Domingos de 10am a 5pm
@@ -450,17 +460,23 @@
     </div>
   </section>
 
-  <section class="container-fluid muva">
+  <section class="container-fluid bg-dark muva">
     <div class="container-muva">
       <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <p class="p-muva">Potenciado por:</p>
-          <img src="img/Muva.svg" alt="" srcset="">
-          <img src="img/Ico-Desarrollo.png" alt="" srcset="">
+        <div class="col-12 d-flex info-muva justify-content-center">
+          <p class="p-muva text-white">Potenciado por:</p>
+          <div class="cajon-footer d-flex">
+            <img src="img/Muva.svg" style="width: 60px;" alt="" srcset="">
+            <hr class="bg-white">
+            <img src="img/Ico-Desarrollo.png" class="ico-desarrollo" style="width: 25px; height: 20px;" alt="" srcset="">
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
