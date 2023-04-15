@@ -13847,17 +13847,6 @@ textarea.form-control-lg {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactanos {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .contactanos .columna-contactanos .cajon-img-contacto1 {
-    width: 100%;
-  }
-  .contactanos .columna-contactanos .cajon-formulario {
-    width: 100%;
-  }
   .cajon-grupo-sura .columna-grupo-sura .cajon-vigilado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13866,8 +13855,41 @@ textarea.form-control-lg {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .contactanos {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .contactanos .columna-contactanos .cajon-img-contacto1 {
+    width: 100%;
+    position: relative;
+    top: 3%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario {
+    width: 100%;
+    height: 67%;
+    position: relative;
+    top: -1%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario .btn-secondary {
+    width: 80%;
+  }
+  .info-contactos .container-info-contactos .info-contacto1,
+  .info-contactos .container-info-contactos .info-contacto2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-contactos .container-info-contactos .info-contacto3 {
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 576px) {
+  .navbar-nav .dropdown-menu {
+    left: -122%;
+    width: 300px;
+    height: 138px;
+  }
   .servicios-integrales .container-integral .rectangulo {
     width: 100%;
     height: 230px;
@@ -13901,6 +13923,9 @@ textarea.form-control-lg {
   }
   .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .caja-verde-claro {
     height: 89%;
+  }
+  .servicios-adicionales .adicionales-pt1 .adicionales-pt1__2 .servicios-residencia p {
+    font-size: 12px;
   }
   .servicios-adicionales .adicionales-pt1 .adicionales-pt1__3 .conocer-mas-2 .btn-adicionales {
     width: 75%;
@@ -13941,5 +13966,16 @@ textarea.form-control-lg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio,
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio1,
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio2 {
+    top: 93%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio5 {
+    left: 61%;
+  }
+  .contactanos .columna-contactanos .cajon-formulario span.obligatorio1 {
+    left: 55%;
   }
 }

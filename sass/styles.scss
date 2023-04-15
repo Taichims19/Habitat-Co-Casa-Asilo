@@ -1607,17 +1607,6 @@
       }
     }
   }
-  .contactanos {
-    height:max-content;
-    .columna-contactanos {
-      .cajon-img-contacto1 {
-        width:100%;
-      }
-      .cajon-formulario {
-        width:100%;
-      }
-    }
-  }
   .cajon-grupo-sura {
     .columna-grupo-sura {
       .cajon-vigilado {
@@ -1626,10 +1615,48 @@
       }
     }
   }
+  .contactanos {
+    height:max-content;
+    .columna-contactanos {
+      .cajon-img-contacto1 {
+        width:100%;
+        position: relative;
+        top: 3%;
+      }
+      .cajon-formulario {
+        width:100%;
+        height: 67%;
+        position: relative;
+        top: -1%;
+        .btn-secondary {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .info-contactos {
+    .container-info-contactos {
+      .info-contacto1,
+      .info-contacto2 {
+        justify-content: center;
+      }
+      .info-contacto3 {
+        opacity: 1;
+      }
+    }
+  }
 
 }
 
 @media only screen and (max-width: 576px) {
+  .navbar-nav {
+    .dropdown-menu {
+      left: -122%;
+      width: 300px;
+      height: 138px;
+    }
+
+  }
   .servicios-integrales {
     .container-integral {
       .rectangulo {
@@ -1677,6 +1704,12 @@
         .caja-verde-claro {
           height: 89%;
         }
+        .servicios-residencia {
+          p {
+            font-size: 12px;
+
+          }
+        }
       }
       .adicionales-pt1__3 {
         .conocer-mas-2 {
@@ -1718,6 +1751,23 @@
       .cajon-filial {
         display: flex;
         justify-content: center;
+      }
+    }
+  }
+  .contactanos {
+    .columna-contactanos {
+      .cajon-formulario {
+        span.obligatorio,
+        span.obligatorio1,
+        span.obligatorio2 {
+          top: 93%;
+        }
+        span.obligatorio5 {
+          left: 61%;
+        }
+        span.obligatorio1 {
+          left: 55%;
+        }
       }
     }
   }
